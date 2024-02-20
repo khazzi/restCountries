@@ -1,0 +1,405 @@
+.page-white{
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(209, 23%, 22%);
+}
+.page {
+    background-color: hsl(209, 23%, 22%);
+    color: white;
+}
+.links{
+    text-decoration: none;
+    color: inherit;
+}
+.navbar {
+    background: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 0 50px;
+    height: 55px;
+    margin: 0;
+}
+.nav-dark {
+    background-color: hsl(207, 13%, 36%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 0 50px;
+    height: 55px;
+    margin: 0;
+    color: white;
+}
+.hidden {
+    position: absolute;
+    width: 128px;
+    display: none;
+    background-color: white;
+    z-index: 3;
+    padding: 20px;
+    margin-top: 1px;
+    border-radius: 10px;
+    border: none;
+}
+.hidden-dark{
+    position: absolute;
+    width: 128px;
+    display: none;
+    background-color: hsl(207, 13%, 36%);
+    z-index: 3;
+    padding: 20px;
+    margin-top: 1px;
+    border-radius: 10px;
+    border: none;
+}
+.hidden-dark.active {
+    display: block;
+    background-color: hsl(207, 13%, 36%);
+    z-index: 3;
+    padding: 20px;
+    p:hover {
+        background-color: gray;
+        font-size: 15px;
+        cursor: pointer;
+    }
+}
+.hidden.active {
+    display: block;
+    background-color: white;
+    z-index: 3;
+    padding: 20px;
+    p:hover {
+        background-color: rgb(230, 229, 229);
+        font-size: 15px;
+        cursor: pointer;
+    }
+}
+.filter-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px 0 8px;
+    background-color: hsl(0, 0%, 100%);
+    width: 150px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 2px rgb(236, 235, 235);
+    button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 20px;
+    }
+}
+.filter-dark {
+    background-color: hsl(207, 13%, 36%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px 0 8px;
+    width: 150px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 2px rgb(236, 235, 235);
+    button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 20px;
+    }
+}
+.search-dark {
+    width: 430px;
+    background-color: hsl(207, 13%, 36%);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px 0 15px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 2px rgb(239, 237, 237);
+    input::placeholder{
+        color: white;
+    }
+    button {
+        background-color: transparent;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+.search {
+    width: 430px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px 0 15px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 2px rgb(239, 237, 237);
+    button {
+        background-color: transparent;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+input {
+    width: 400px;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+    
+}
+.mode{
+    display: flex;
+   padding: 10px;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   font-size: 20px;
+   button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 21px;
+    margin-right: 5px;
+    cursor: pointer;
+   }
+}
+.herotop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 50px 0 50px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+    gap: 20px; /* Add spacing between cards */
+    padding: 50px;
+  }
+  
+  .card {
+    background-color: #f0f0f0;
+    width: 280px;
+    text-align: left;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 2px rgb(213, 212, 212);
+    margin-bottom: 50px;
+    cursor: pointer;
+    img{
+        width: 280px;
+        height: 150px;
+        border-radius: 10px 10px 0 0;
+    }
+  }
+  .card-dark {
+    background-color: hsl(207, 13%, 36%);
+    width: 280px;
+    text-align: left;
+    border-radius: 10px;
+    border: none;
+
+    margin-bottom: 50px;
+    cursor: pointer;
+    img{
+        width: 280px;
+        height: 150px;
+        border-radius: 10px 10px 0 0;
+    }
+  }
+  .card-text {
+    padding: 20px;
+  }
+  
+  @media screen and (max-width: 550px) {
+    .page {
+        width: 100vw;
+    }
+    .page-white {
+        width: 100vw;
+    }
+    .navbar {
+        padding: 0 10px 0 10px;
+    }
+    .nav-dark {
+        padding: 0 10px 0 10px;
+    }
+    .herotop {
+        padding: 0 10px 0 10px;
+    }
+    .search{
+        width: 40vw;
+        input{
+            width: 33vw;
+            outline: none;
+        }
+    }
+    .search-dark {
+        width: 40vw;
+        input{
+            width: 33vw;
+            outline: none;
+        }
+    }
+    .filter-header{
+        margin-right: 5px;
+    }
+    .filter-dark{
+        margin-right: 5px;
+    }
+    .grid-container{
+        padding: 0 10px 0 10px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-top: 15px;
+    }
+    .card{
+        width: 45vw;
+        height: auto;
+        
+        img{
+            width: 45vw;
+            height: 13vh;
+        }
+        
+    }
+    .card-dark{
+        width: 45vw;
+        height: auto;
+        img{
+            width: 45vw;
+            height: 13vh;
+        }
+    }
+  }
+  @media screen and (min-width: 551px) and (max-width: 800px) {
+    .page {
+        width: 100vw;
+    }
+    .page-white {
+        width: 100vw;
+    }
+    .navbar {
+        padding: 0 35px 0 35px;
+    }
+    .nav-dark {
+        padding: 0 35px 0 35px;
+    }
+    .herotop {
+        padding: 0 35px 0 35px;
+    }
+    .search{
+        width: 40vw;
+        input{
+            width: 33vw;
+            outline: none;
+        }
+    }
+    .search-dark {
+        width: 40vw;
+        input{
+            width: 33vw;
+            outline: none;
+        }
+    }
+    .filter-header{
+        margin-right: 5px;
+    }
+    .filter-dark{
+        margin-right: 5px;
+    }
+    .grid-container{
+        padding: 0 30px 0 30px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-top: 25px;
+    }
+    .card{
+        width: 30vw;
+        height: auto;
+        
+        img{
+            width: 30vw;
+            height: 13vh;
+        }
+        
+    }
+    .card-dark{
+        width: 30vw;
+        height: auto;
+        img{
+            width: 30vw;
+            height: 13vh;
+        }
+    }
+  }
+  @media screen and (min-width: 801px) and (max-width: 1300px){
+    .page {
+        width: 100vw;
+    }
+    .page-white {
+        width: 100vw;
+    }
+    .navbar {
+        padding: 0 40px 0 40px;
+    }
+    .nav-dark {
+        padding: 0 40px 0 40px;
+    }
+    .herotop {
+        padding: 0 40px 0 40px;
+    }
+    .search{
+        width: 30vw;
+        input{
+            width: 33vw;
+            outline: none;
+        }
+    }
+    .search-dark {
+        width: 30vw;
+        input{
+            width: 33vw;
+            outline: none;
+        }
+    }
+    .filter-header{
+        margin-right: 5px;
+    }
+    .filter-dark{
+        margin-right: 5px;
+    }
+    .grid-container{
+        padding: 0 30px 0 30px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin-top: 25px;
+    }
+    .card{
+        width: 22vw;
+        height: auto;
+        
+        img{
+            width: 22vw;
+            height: 16vh;
+        }
+        
+    }
+    .card-dark{
+        width: 22vw;
+        height: auto;
+        img{
+            width: 22vw;
+            height: 16vh;
+        }
+    }
+  }
